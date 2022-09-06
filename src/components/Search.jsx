@@ -1,12 +1,18 @@
 import { useState } from "react";
 
 export default () => {
-  const [counter, setCounter] = useState(0);
+  const [searchText, setSearchText] = useState("");
+
+  const handleChange = (e) => {
+    setSearchText(e.target.value);
+
+    
+  };
 
   return (
     <div>
-      <button onClick={() => setCounter(counter + 1)}></button>
-      {counter}
+      <input type="search" value={searchText} onChange={handleChange} />
+      {searchText}
     </div>
   );
 };
