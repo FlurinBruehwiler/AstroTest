@@ -1,64 +1,8 @@
 import { useState } from "react";
 import Fuse from "fuse.js";
+import Kaese from "./Kaese";
 
-const books = [
-  {
-    title: "Emmentaler",
-  },
-  {
-    title: "Gruyere",
-  },
-  {
-    title: "Appenzeller",
-  },
-  {
-    title: "Tilsiter",
-  },
-  {
-    title: "Scharfi Maxxx",
-  },
-  {
-    title: "Sbrinz",
-  },
-  {
-    title: "Tete de moine",
-  },
-  {
-    title: "Raclette",
-  },
-  {
-    title: "Fondue Käse",
-  },
-  {
-    title: "Bündner Bergkäse",
-  },
-  {
-    title: "Vacherin mont dor",
-  },
-  {
-    title: "Swizzrocker",
-  },
-  {
-    title: "Berner Hobelkäse",
-  },
-  {
-    title: "Tessiner Alpkäse",
-  },
-  {
-    title: "Tomme Vaudiose",
-  },
-  {
-    title: "Füürtüfel",
-  },
-  {
-    title: "Würziger Bruno",
-  },
-  {
-    title: "Aletsch Carnotzet",
-  },
-];
-
-const fuse = new Fuse(books, {
+const fuse = new Fuse(Kaese, {
   keys: ["title"],
 });
 
@@ -78,7 +22,13 @@ export default () => {
       <input type="search" value={searchText} onChange={handleChange} />
       <div>
         {searchResult.map((x) => {
-          return <p key={x.item.refIndex}>{x.item.title}</p>;
+          return (
+            <a href={x.item.url} key={x.item.title}>
+              <p>{x.item.title}</p>
+              <p>{x.item.description}</p>
+              <img src={x.item.image} alt="" />
+            </a>
+          );
         })}
       </div>
     </div>
