@@ -1,135 +1,146 @@
-export default [
+interface Cheese{
+  title: string,
+  description: string,
+  url: string,
+  image: string,
+  id: number
+}
+
+const cheeses : Cheese[] = [
   {
     title: "Emmentaler",
     description: "Aff",
     url: "",
     image: "",
-    key: 1
+    id: 1
   },
   {
     title: "Gruyere",
     description: "Aff",
     url: "",
     image: "",
-    key: 2
+    id: 2
   },
   {
     title: "Appenzeller",
     description: "Aff",
     url: "",
     image: "",
-    key: 3
+    id: 3
   },
   {
     title: "Tilsiter",
     description: "Aff",
     url: "",
     image: "",
-    key: 4
+    id: 4
   },
   {
     title: "Scharfi Maxxx",
     description: "Aff",
     url: "",
     image: "",
-    key: 5
+    id: 5
   },
   {
     title: "Sbrinz",
     description: "Aff",
     url: "",
     image: "",
-    key: 6
+    id: 6
   },
   {
     title: "Tete de moine",
     description: "Aff",
     url: "",
     image: "",
-    key: 7
+    id: 7
   },
   {
     title: "Raclette",
     description: "Aff",
     url: "",
     image: "",
-    key: 8
+    id: 8
   },
   {
     title: "Fondue Käse",
     description: "Aff",
     url: "",
     image: "",
-    key: 9
+    id: 9
   },
   {
     title: "Bündner Bergkäse",
     description: "Aff",
     url: "",
     image: "",
-    key: 10
+    id: 10
   },
   {
     title: "Vacherin mont dor",
     description: "Aff",
     url: "",
     image: "",
-    key: 11
+    id: 11
   },
   {
     title: "Swizzrocker",
     description: "Aff",
     url: "",
     image: "",
-    key: 12
+    id: 12
   },
   {
     title: "Berner Hobelkäse",
     description: "Aff",
     url: "",
     image: "",
-    key: 13
+    id: 13
   },
   {
     title: "Tessiner Alpkäse",
     description: "Aff",
     url: "",
     image: "",
-    key: 14
+    id: 14
   },
   {
     title: "Tomme Vaudiose",
     description: "Aff",
     url: "",
     image: "",
-    key: 15
+    id: 15
   },
   {
     title: "Füürtüfel",
     description: "Aff",
     url: "",
     image: "",
-    key: 16
+    id: 16
   },
   {
     title: "Luzerner Rahmkäse",
     description: "Aff",
     url: "",
     image: "",
-    key: 17
+    id: 17
   },
   {
     title: "Würziger Bruno",
     description: "Aff",
     url: "",
     image: "",
-    key: 18
+    id: 18
   },
   {
     title: "Aletsch Carnotzet",
     description: "Aff",
     url: "",
     image: "",
-    key: 19
+    id: 19
   },
 ];
+
+export {cheeses};
+export type {Cheese}
