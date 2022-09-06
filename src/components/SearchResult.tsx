@@ -3,6 +3,7 @@ interface CheeseProps {
   description: string;
   url: string;
   image: string;
+  selected: boolean;
 }
 
 export default (props: CheeseProps) => {
