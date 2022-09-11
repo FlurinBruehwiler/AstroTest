@@ -1,9 +1,11 @@
 ---
-import Search from '../components/Search.jsx';
-import '../global.css'
+import Search from '../components/Search';
+import Layout from '../layouts/Layout.astro';
 ---
-<div class="grid-cols-3">
-    <div class="w-10"></div>
-    <Search client:load></Search>
-    <div></div>
-</div>
+
+<Layout title="Welcome to Astro.">
+	<div class="w-full flex justify-center">
+		<Search client:load></Search>
+
+	</div>
+</Layout>

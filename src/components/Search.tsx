@@ -1,9 +1,7 @@
 import { useState } from "react";
+import { Cheese, cheeses } from "../Cheese";
 import Fuse from "fuse.js";
-import type { Cheese } from "./Cheeses";
-import { cheeses } from "./Cheeses";
 import SearchResult from "./SearchResult";
-import '../global.css';
 
 const fuse = new Fuse(cheeses, {
   keys: ["title"],
@@ -22,10 +20,10 @@ export default () => {
   const handleInputKeyPress = (e: React.KeyboardEvent) => {
     switch (e.key) {
       case "ArrowDown":
-        setSelectIndex(selectIndex + 1)
+        setSelectIndex(selectIndex + 1);
         break;
       case "ArrowUp":
-        setSelectIndex(selectIndex - 1)
+        setSelectIndex(selectIndex - 1);
         break;
       case "Enter":
         //executeLink
@@ -34,13 +32,13 @@ export default () => {
   };
 
   return (
-    <div>
+    <div className="w-[700px]">
       <input
         type="search"
         value={searchText}
         onChange={handleChange}
         onKeyDown={handleInputKeyPress}
-        className="w-40"
+        className="w-full h-10 bg-slate-400 rounded-md p-3 hover:outline-none outline-none"
       />
       <div>
         {(searchText === "" ? cheeses : searchResults).map((x, i) => (
