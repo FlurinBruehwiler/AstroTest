@@ -1,3 +1,5 @@
+import '../global.css';
+
 interface CheeseProps {
   title: string;
   description: string;
@@ -8,10 +10,12 @@ interface CheeseProps {
 
 export default (props: CheeseProps) => {
   return (
-    <a className="bg-gray-500" href={props.url}>
-      <p className="text-fuchsia-300">{props.title}</p>
-      <p>{props.description}</p>
-      <img src={props.image} alt={props.title} />
-    </a>
+    <div className="bg-red-600" >
+      <a href={props.url}>
+        <p className="text-red-900 bg-black">{props.title}</p>
+        <p>{props.description}</p>
+        <img src={props.image} alt={props.title} />
+      </a>
+    </div>
   );
 };

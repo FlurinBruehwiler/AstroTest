@@ -3,6 +3,7 @@ import Fuse from "fuse.js";
 import type { Cheese } from "./Cheeses";
 import { cheeses } from "./Cheeses";
 import SearchResult from "./SearchResult";
+import '../global.css';
 
 const fuse = new Fuse(cheeses, {
   keys: ["title"],
