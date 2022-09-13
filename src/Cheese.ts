@@ -12,133 +12,133 @@ interface Cheese{
     {
       title: "Emmentaler",
       description: desc,
-      url: "",
+      url: "Emmentaler",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 1
     },
     {
-      title: "Gruyere",
+      title: "Gruyère",
       description: desc,
-      url: "",
+      url: "Gruyere",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 2
     },
     {
       title: "Appenzeller",
       description: desc,
-      url: "",
+      url: "Appenzeller",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 3
     },
     {
       title: "Tilsiter",
       description: desc,
-      url: "",
+      url: "Tilsiter",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 4
     },
     {
       title: "Scharfi Maxxx",
       description: desc,
-      url: "",
+      url: "Scharfi_Maxxx",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 5
     },
     {
       title: "Sbrinz",
       description: desc,
-      url: "",
+      url: "Sbrinz",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 6
     },
     {
       title: "Tete de moine",
       description: desc,
-      url: "",
+      url: "Tete_de_moine",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 7
     },
     {
       title: "Raclette",
       description: desc,
-      url: "",
+      url: "Raclette",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 8
     },
     {
       title: "Fondue Käse",
       description: desc,
-      url: "",
+      url: "Fondue_Käse",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 9
     },
     {
       title: "Bündner Bergkäse",
       description: desc,
-      url: "",
+      url: "Bündner_Bergkäse",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 10
     },
     {
       title: "Vacherin mont dor",
       description: desc,
-      url: "",
+      url: "Vacherin_mont_dor",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 11
     },
     {
       title: "Swizzrocker",
       description: desc,
-      url: "",
+      url: "Swizzrocker",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 12
     },
     {
       title: "Berner Hobelkäse",
       description: desc,
-      url: "",
+      url: "Berner_Hobelkäse",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 13
     },
     {
       title: "Tessiner Alpkäse",
       description: desc,
-      url: "",
+      url: "Tessiner_Alpkäse",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 14
     },
     {
       title: "Tomme Vaudiose",
       description: desc,
-      url: "",
+      url: "Tomme_Vaudiose",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 15
     },
     {
       title: "Füürtüfel",
       description: desc,
-      url: "",
+      url: "Füürtüfel",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 16
     },
     {
       title: "Luzerner Rahmkäse",
       description: desc,
-      url: "",
+      url: "Luzerner_Rahmkäse",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 17
     },
     {
       title: "Würziger Bruno",
       description: desc,
-      url: "",
+      url: "Würziger_Bruno",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 18
     },
     {
       title: "Aletsch Carnotzet",
       description: desc,
-      url: "",
+      url: "Aletsch_Carnotzet",
       image: "https://www.schweizerkaese.ch/fileadmin/_processed_/e/6/csm_APP_Composing_Food_MwKwEwEdelwRaessw_April_2019_d_cmyk_korrigiert_4c8b4bbdeb.jpg",
       id: 19
     },
