@@ -1,49 +1,17 @@
-# Welcome to [Astro](https://astro.build)
+# Echo vom Chääs
+Das Projekt hat den Namen «Echo vom Chääs», weil unsere Website eine spezielle Funktion hat. Ein schweizerdeutscher Sprecher beschreibt per Audio verschiedene Käsesorten. 
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+## Product Vision
+![image](https://user-images.githubusercontent.com/91938823/189829866-cc821e04-f6a4-4172-836f-1b0d3e893943.png)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Beschreibung
+Es wird eine Website über Käse gemacht. Man bekommt Informationen von den verschiedenen Käsesorten. Auf der Homepage sieht man verschiedene Käsesorten und eine kleine Beschreibung zu jedem Käse. Die kleine Beschreibung beinhaltet 1-2 Sätze. Wenn man genauere Informationen zu einer Käsesorte will, klickt man auf diese Käsesorte drauf. Danach bekommt man einen ausführlichen Text zur gewählten Käsesorte über. Man bekommt eine schweizerdeutsche Audio von jedem Käse über. Auf der Homepage findet man eine Suchleiste namens «Cheesefinder». Man kann hier nach einer Käsesorte suchen. Neben dem «Cheesefinder» gibt es auch einen Filter Button. Der sotiert die Käsesorten nach Alphabet und Kantone. 
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Requirements
+
+Visual Studio Code (Code): Visual Studio Code Website
+Figma (Mockups): Figma Website 
+Youtrack (Scrum): Youtrack Website
 
 
-## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
