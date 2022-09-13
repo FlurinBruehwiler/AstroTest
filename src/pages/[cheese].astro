@@ -19,3 +19,9 @@ const cheeseObject = cheeses.find((x) => x.url === cheese);
 <h1>{cheeseObject?.title}</h1>
 <p>{cheeseObject?.description}</p>
 <img src={cheeseObject?.image} alt={cheeseObject?.title}>
+
+<audio controls>
+    <source src={"sounds/" + cheeseObject?.sound} type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+  
