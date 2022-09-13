@@ -8,7 +8,11 @@ interface CheeseProps {
 
 export default (props: CheeseProps) => {
   return (
-    <div className="bg-slate-400 mt-4 rounded-md p-4">
+    <div
+      className={`${
+        props.selected ? "bg-slate-600" : "bg-slate-400"
+      } bg-slate-400 mt-4 rounded-md p-4`}
+    >
       <a href={props.url} className="flex justify-between">
         <div>
           <p className="text-lg font-bold">{props.title}</p>
