@@ -29,7 +29,7 @@ Das Projekt hat den Namen «Echo vom Chääs», weil unsere Website eine speziel
 ![image](https://user-images.githubusercontent.com/91938823/189829866-cc821e04-f6a4-4172-836f-1b0d3e893943.png)
 
 ## Beschreibung
-Es wird eine Website über Käse gemacht. Man bekommt Informationen von den verschiedenen Käsesorten. Auf der Homepage sieht man verschiedene Käsesorten und eine kleine Beschreibung zu jedem Käse. Die kleine Beschreibung beinhaltet 1-2 Sätze. Wenn man genauere Informationen zu einer Käsesorte will, klickt man auf diese Käsesorte. Danach kann man einen ausführlichen Text über die gewählte Käsesorte lesen. Eine schweizerdeutsche Audio wird von jedem Käse laufen. Auf der Homepage findet man eine Suchleiste namens «Cheesefinder». Man kann hier nach einer Käsesorte suchen. Neben dem «Cheesefinder» gibt es auch einen Filter Button. Der sotiert die Käsesorten nach Alphabet und Kantone. 
+Es wird eine Website über Käse gemacht. Man bekommt Informationen von den verschiedenen Käsesorten. Auf der Homepage sieht man verschiedene Käsesorten und eine kleine Beschreibung zu jedem Käse. Die kleine Beschreibung beinhaltet 1-2 Sätze. Wenn man genauere Informationen zu einer Käsesorte will, klickt man auf diese Käsesorte. Danach kann man einen ausführlichen Text über die gewählte Käsesorte lesen. Auch eine schweizerdeutsche Audio wird über den Käse abgespielt. Auf der Homepage findet man eine Suchleiste namens «Cheesefinder». Man kann hier nach einer Käsesorte suchen. Neben dem «Cheesefinder» gibt es auch einen Filter Button. Der sotiert die Käsesorten nach Alphabet und Kantone. 
   
 ## Developement
 1. Geben Sie `npm ci` in die Konsole ein, um das Projekt zu installieren
@@ -37,6 +37,6 @@ Es wird eine Website über Käse gemacht. Man bekommt Informationen von den vers
 3. Geben Sie `http://localhost:3000/` im Browser ein, um das Projekt zu starten
 
 ## Requirements
-<p>Visual Studio Code (Code): <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></p>
-<p>Figma (Mockups): <a href="https://www.figma.com/" target="_blank">Figma</a></p>
-<p>Youtrack (Scrum): <a href="https://www.jetbrains.com/youtrack/" target="_blank">Youtrack</a></p>
+<p><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (Code)</p>
+<p><a href="https://www.figma.com/" target="_blank">Figma</a> (Mockups)</p>
+<p><a href="https://www.jetbrains.com/youtrack/" target="_blank">Youtrack</a> (Scrum)</p>
