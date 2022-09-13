@@ -1,12 +1,21 @@
 ---
-export function getStaticPaths() {
-  return [
-    // Generates: /dogs/clifford
-    {params: {dog: 'clifford'}},
-    // Generates: /dogs/rover
-    {params: {dog: 'rover'}},
-    // Generates: /dogs/spot
-    {params: {dog: 'spot'}},
-  ];
+import { cheeses } from "../Cheese";
+
+interface staticPath{
+    params: {cheese: string}
 }
+
+export function getStaticPaths() : staticPath[]{  
+    return cheeses.map((x) => {
+        return {params: {cheese: x.url}};
+    });
+}
+
+const { cheese } = Astro.params;
+
+const cheeseObject = cheeses.find((x) => x.url === cheese);
 ---
+
+<h1>{cheeseObject?.title}</h1>
+<p>{cheeseObject?.description}</p>
+<img src={cheeseObject?.image} alt={cheeseObject?.title}>
