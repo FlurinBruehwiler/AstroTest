@@ -40,7 +40,6 @@ export default () => {
     <div className="w-[700px] bg-cc-100">
       <div className="flex justify-center w-full self-center my-4">
         <input
-          autoFocus
           type="search"
           value={searchText}
           onChange={handleChange}
