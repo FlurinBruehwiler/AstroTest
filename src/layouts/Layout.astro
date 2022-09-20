@@ -14,8 +14,11 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 	</head>
-	<body class="h-full">
+	<body class="h-full bg-cc-200 font-acme">
 		<slot />
 	</body>
 </html>
