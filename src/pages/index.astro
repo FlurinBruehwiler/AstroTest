@@ -3,9 +3,18 @@ import Search from '../components/Search';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<div class="w-full flex justify-center">
-		<Search client:load></Search>
-
+<Layout title="s'Echo vom Chääääs">
+	<nav class="h-[3.5rem] bg-cc-100 flex justify-between items-center text-cc-400 text-[1.5rem]">
+		<div class="h-[3.5rem] leading-[3.275rem]">
+			Home
+		</div>
+		<div>
+			<a>Cheesefinder</a>
+			<a>About</a>
+			<a href="">Contact</a>
+		</div>
+	</nav>
+	<div class="h-full w-full flex justify-center">
 	</div>
+	<Search client:load></Search>
 </Layout>
