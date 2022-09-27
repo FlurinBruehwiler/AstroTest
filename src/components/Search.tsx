@@ -37,15 +37,16 @@ export default () => {
   };
 
   return (
-    <div className="w-[700px]">
-      <input
-        autoFocus
-        type="search"
-        value={searchText}
-        onChange={handleChange}
-        onKeyDown={handleInputKeyPress}
-        className="w-full h-10 bg-slate-400 rounded-md p-3 hover:outline-none outline-none"
-      />
+    <div className="w-[700px] bg-cc-100">
+      <div className="flex justify-center w-full self-center my-4">
+        <input
+          type="search"
+          value={searchText}
+          onChange={handleChange}
+          onKeyDown={handleInputKeyPress}
+          className="w-[500px] h-10 bg-slate-400 rounded-md p-3 hover:outline-none outline-none"
+        />
+      </div>
       <div>
         {searchResults.map((x, i) => (
           <div key={x.title}>
