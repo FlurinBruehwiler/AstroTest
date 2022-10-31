@@ -1,13 +1,13 @@
 ﻿public class Player
 {
-    public Player(string name)
+    public Player(string name, string connectionId)
     {
-        var rand = new Random();
-        Id = rand.Next();
+        ConnectionId = connectionId;
         Name = name;
     }
     
     public string Name { get; set; }
-    public int Id { get; set; }
+    public string ConnectionId { get; set; }
     public int Score { get; set; } = 0;
+    public bool IsLeader { get; set; }
 }

@@ -1,39 +1,62 @@
 ﻿using Backend.Model;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Options;
 
 namespace Backend;
 
 public class GameHub : Hub
 {
     private readonly StorageService _storageService;
+    private readonly GameConfiguration _gameConfig;
 
-    public GameHub(StorageService storageService)
+    public GameHub(StorageService storageService, IOptions<GameConfiguration> gameConfig)
     {
         _storageService = storageService;
+        _gameConfig = gameConfig.Value;
     }
 
-    public void CreateGame(string playerName)
+    public int CreateGame()
     {
-        _storageService.Games.Add(new Game(new Player(playerName)));
+        var game = new Game(Context.ConnectionId);
+        _storageService.Games.Add(game);
+        return game.Id;
     }
     
     public void JoinGame(int gameId, string playerName)
     {
         var game = _storageService.Games.FirstOrDefault(x => x.Id == gameId);
 
-        if (game is null)
+        game?.Players.Add(new Player(playerName, Context.ConnectionId));
+    }
+
+    public void StartGame()
+    {
+        var (game, _) = _storageService.GetGameAndPlayerFromConnectionId(Context.ConnectionId) ?? default;
+
+        if (game?.Players.FirstOrDefault(x => x.IsLeader)?.ConnectionId == Context.ConnectionId)
+        {
+            game.IsStarted = true;
+        }
+    }
+
+    public void SubmitGuess(int cheeseIdGuess)
+    {
+        var (game, player) = _storageService.GetGameAndPlayerFromConnectionId(Context.ConnectionId) ?? default;
+
+        if (game is null || player is null)
             return;
-        
-        game.Players.Add(new Player(playerName));
-    }
 
-    public async Task StartGame()
-    {
-        
-    }
+        if (game.CurrentCheeseId != cheeseIdGuess)
+            return;
 
-    public async Task SubmitGuess()
-    {
+        var roundEndTime = game.RoundStartTime.AddSeconds(_gameConfig.RoundTime);
         
+        if (DateTime.Now > roundEndTime)
+            return;
+
+        var currentTime = Convert.ToInt32((DateTime.Now - game.RoundStartTime).TotalMilliseconds);
+         var maxTime = _gameConfig.RoundTime * 1000;
+        
+        player.Score += Convert.ToInt32(currentTime / maxTime * _gameConfig.MaxPoints);
     }
 }
