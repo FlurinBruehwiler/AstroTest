@@ -1,0 +1,12 @@
+---
+interface staticPath{
+    params: {game: string}
+}
+
+export function getStaticPaths() : staticPath[]{  
+    return cheeses.map((x) => {
+        return {params: {cheese: x.url}};
+    });
+}
+---
+<h1>test</h1>

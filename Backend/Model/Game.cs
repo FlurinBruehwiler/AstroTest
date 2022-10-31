@@ -7,6 +7,7 @@ public class Game
         var rand = new Random();
         Id = rand.Next(0, 1000);
         Players = new List<Player>();
+        GameState = GameState.NotStarted;
     }
     
     public List<Player> Players { get; set; }
@@ -19,7 +20,8 @@ public class Game
 
 public enum GameState
 {
+    NotStarted,
     Waiting,
     Guessing,
-
+    Ended,
 }

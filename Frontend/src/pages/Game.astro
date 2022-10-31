@@ -1,0 +1,10 @@
+---
+let x = getRandomInt(10000);
+let link = `/Game/${x}`
+
+function getRandomInt(max: number) {
+  return Math.floor(Math.random() * max);
+}
+---
+
+<a href={link}>Create New Game</a>

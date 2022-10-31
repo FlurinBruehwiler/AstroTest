@@ -22,10 +22,12 @@ public class GameHub : Hub
         return game.Id;
     }
     
-    public void JoinGame(int gameId, string playerName)
+    public async Task JoinGame(int gameId, string playerName)
     {
         var game = _storageService.Games.FirstOrDefault(x => x.Id == gameId);
 
+        await Groups.AddToGroupAsync(Context.ConnectionId, gameId.ToString());
+        
         game?.Players.Add(new Player(playerName, Context.ConnectionId));
     }
 
@@ -35,7 +37,7 @@ public class GameHub : Hub
 
         if (game?.Players.FirstOrDefault(x => x.IsLeader)?.ConnectionId == Context.ConnectionId)
         {
-            game.IsStarted = true;
+            game.GameState = GameState.Guessing;
         }
     }
 
