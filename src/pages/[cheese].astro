@@ -1,5 +1,6 @@
 ---
 import { cheeses } from "../Cheese";
+import Layout from "../layouts/Layout.astro";
 
 interface staticPath{
     params: {cheese: string}
@@ -16,12 +17,37 @@ const { cheese } = Astro.params;
 const cheeseObject = cheeses.find((x) => x.url === cheese);
 ---
 
-<h1>{cheeseObject?.title}</h1>
-<p>{cheeseObject?.description}</p>
-<img src={cheeseObject?.image} alt={cheeseObject?.title}>
+<Layout title="CheeseinfoPage">
 
-<audio controls>
-    <source src={"sounds/" + cheeseObject?.sound} type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+    <nav
+    class="h-[3.5rem] bg-cc-100 flex justify-between items-center text-cc-400 text-[1.5rem]">
+    <div class="h-[3.5rem] leading-[3.275rem] mx-10">Home</div>
+    <div class="flex gap-10 mx-10 items-center">
+        <a>Game</a>
+      <a>Cheesefinder</a>
+      <a>About</a>
+      <a href="" class="bg-cc-400 text-cc-200 rounded-lg px-3 border-cc-200 border-solid border-2">Contact</a>
+    </div>
+  </nav>
+
+  <div class="max-h-[100%] w-full flex justify-center text-cc-400 p-20">
+        <div class="grid grid-flow-col">
+            <div>
+                <h1 class="text-8xl mb-10">{cheeseObject?.title}</h1>
+                <p class="text-3xl text-cc-300">{cheeseObject?.description}</p>
+                <audio controls class="mt-10">
+                    <source src={"sounds/" + cheeseObject?.sound} type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div>
+                <img src={cheeseObject?.image} alt={cheeseObject?.title}>
+            </div>
+        </div>
+  </div>
+  <div class= "flex justify-center">
+    <img class="max-w-[70%]" src="photos/Cheesedetails.PNG">
+  </div>
+  <footer class="py-20"></footer>
+</Layout>
+
   
