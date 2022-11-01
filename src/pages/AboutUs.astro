@@ -1,5 +1,38 @@
 ---
+import Layout from "../layouts/Layout.astro";
 
 ---
 
-<h1>About Us</h1>
+<Layout title="About">
+    <div class="max-h-[100%] overflow-hidden">
+    <nav
+        class="h-[3.5rem] bg-cc-100 flex justify-between items-center text-cc-400 text-[1.5rem]">
+        <div class="h-[3.5rem] leading-[3.275rem] mx-10">Home</div>
+        <div class="flex gap-10 mx-10 items-center">
+            <a>Game</a>
+          <a>Cheesefinder</a>
+          <a>About</a>
+          <a href="" class="bg-cc-400 text-cc-200 rounded-lg px-3 border-cc-200 border-solid border-2">Contact</a>
+        </div>
+      </nav>
+
+      <div class="h-full w-full flex justify-center text-cc-400">
+        <video autoplay muted>
+            <source src="videos/1.mp4" type="video/mp4" />
+          </video>
+        <div class="m-20">
+          <h1 class="text-8xl mb-5">Mir sind S'Echo vom Chäääs~</h1>
+          <h1 class="text-4xl">Team</h1>
+          <p class="text-2xl text-cc-300 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi molestiae
+            accusamus illum libero velit beatae praesentium provident repellendus,
+            veniam, quaerat esse exercitationem hic architecto placeat, et quam sunt
+            adipisci debitis!</p>
+            <h1 class="text-4xl">Motivation & Vision</h1>
+          <p class="text-2xl text-cc-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi molestiae
+            accusamus illum libero velit beatae praesentium provident repellendus,
+            veniam, quaerat esse exercitationem hic architecto placeat, et quam sunt
+            adipisci debitis!</p>
+        </div>
+      </div>
+    </div>
+</Layout>
