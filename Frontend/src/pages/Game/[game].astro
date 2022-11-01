@@ -1,12 +1,24 @@
 ---
+
+
+
 interface staticPath{
     params: {game: string}
 }
 
+
 export function getStaticPaths() : staticPath[]{  
-    return cheeses.map((x) => {
-        return {params: {cheese: x.url}};
+    var list : number[] = [];
+
+for (let i = 0; i < 101; i++) {
+  list.push(i)
+}
+
+    return list.map((x) => {
+        return {params: {game: x.toString()}};
     });
 }
+
+
 ---
 <h1>test</h1>
