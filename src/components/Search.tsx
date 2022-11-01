@@ -37,15 +37,17 @@ export default () => {
   };
 
   return (
-    <div className="w-[700px] bg-cc-100">
+    <div className="w-[700px] bg-cc-600">
       <div className="flex justify-center w-full self-center my-4">
         <input
           type="search"
+          placeholder="Cheesefinder..."
           value={searchText}
           onChange={handleChange}
           onKeyDown={handleInputKeyPress}
-          className="w-[500px] h-10 bg-slate-400 rounded-md p-3 hover:outline-none outline-none"
+          className="w-[500px] h-10 bg-cc-400 rounded-md p-3 hover:outline-none outline-none border-solid border-l-black placeholder-cc-200"
         />
+        <button className="w-[40px] h-10 bg-cc-400 rounded-md p-3 ml-3"></button>
       </div>
       <div>
         {searchResults.map((x, i) => (
@@ -56,6 +58,7 @@ export default () => {
               url={x.url}
               image={x.image}
               selected={selectIndex === i}
+              isRight={i % 2 == 0}
             ></SearchResult>
           </div>
         ))}

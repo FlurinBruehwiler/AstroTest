@@ -4,19 +4,25 @@ interface CheeseProps {
   url: string;
   image: string;
   selected: boolean;
+  isRight: boolean;
 }
 
 export default (props: CheeseProps) => {
   return (
     <div
       className={`${
-        props.selected ? "bg-slate-600" : "bg-slate-400"
-      } bg-slate-400 mt-4 rounded-md p-4`}
+        props.selected ? "bg-cc-100" : "bg-cc-100"
+      }  bg-cc-100 mt-4 rounded-md p-4`}
     >
-      <a href={props.url} className="flex justify-between">
+      <a
+        href={props.url}
+        className={`${
+          props.isRight ? "flex-row" : "flex-row-reverse"
+        } flex justify-between items-center gap-5`}
+      >
         <div>
-          <p className="text-lg font-bold">{props.title}</p>
-          <p>{props.description}</p>
+          <p className="text-lg font-bold text-cc-400">{props.title}</p>
+          <p className="text-cc-300">{props.description}</p>
         </div>
 
         <img src={props.image} alt={props.title} className="h-32" />
