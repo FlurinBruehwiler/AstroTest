@@ -19,9 +19,7 @@ Das Projekt hat den Namen «Echo vom Chääs», weil unsere Website eine speziel
   </ol>
 </details>
 
-<p align="left">
-    <a href="[https://github.com/badges/shields/graphs/contributors](https://github.com/FlurinBruehwiler/sEchoVomChaes/graphs/contributors)" alt="Contributors">
-        <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
+
         
    
 
@@ -29,10 +27,10 @@ Das Projekt hat den Namen «Echo vom Chääs», weil unsere Website eine speziel
 ![image](https://user-images.githubusercontent.com/91938823/189829866-cc821e04-f6a4-4172-836f-1b0d3e893943.png)
 
 ## Beschreibung
-Es wird eine Website über Käse gemacht. Man bekommt Informationen von den verschiedenen Käsesorten. Auf der Homepage sieht man verschiedene Käsesorten und eine kleine Beschreibung zu jedem Käse. Die kleine Beschreibung beinhaltet 1-2 Sätze. Wenn man genauere Informationen zu einer Käsesorte will, klickt man auf diese Käsesorte. Danach kann man einen ausführlichen Text über die gewählte Käsesorte lesen. Auch eine schweizerdeutsche Audio wird über den Käse abgespielt. Auf der Homepage findet man eine Suchleiste namens «Cheesefinder». Man kann hier nach einer Käsesorte suchen. Neben dem «Cheesefinder» gibt es auch einen Filter Button. Der sotiert die Käsesorten nach Alphabet und Kantone. 
+Es wird eine Website über Käse gemacht. Man bekommt Informationen von den verschiedenen Käsesorten. Auf der Homepage sieht man verschiedene Käsesorten und eine kleine Beschreibung zu jedem Käse. Die kleine Beschreibung beinhaltet 1-2 Sätze. Wenn man genauere Informationen zu einer Käsesorte will, klickt man auf diese Käsesorte. Danach kann man einen ausführlichen Text über die gewählte Käsesorte lesen. Auch eine schweizerdeutsche Audio wird über den Käse abgespielt. Auf der Homepage findet man eine Suchleiste namens «Cheesefinder». Man kann hier nach einer Käsesorte suchen. Neben dem «Cheesefinder» gibt es auch einen Filter Button. Der sotiert die Käsesorten nach Alphabet und Kantone. Es gibt noch ein CheeseGame. Bei dem tritt man gegen andere Teilnehmer an. Es werden Käsesorten angezeigt und die muss man dann erraten. Wer am meisten Punkte hat, gewinnt schlussendlich.  
   
 ## Developement
-1. Geben Sie `npm ci` in die Konsole ein, um das Projekt zu installieren
+1. Geben Sie `npm i` in die Konsole ein, um das Projekt zu installieren
 2. Geben Sie `npm run dev` in die Konsole ein, um das Projekt zu starten
 3. Geben Sie `http://localhost:3000/` im Browser ein, um das Projekt zu starten
 
