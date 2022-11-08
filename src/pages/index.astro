@@ -1,17 +1,18 @@
 ---
 import Search from "../components/Search";
 import Layout from "../layouts/Layout.astro";
+
+let random =  Math.floor(Math.random() * 3) + 1;
 ---
 
 <Layout title="s'Echo vom Chääääs">
   <nav
-    class="h-[3.5rem] bg-cc-100 flex justify-between items-center text-cc-400 text-[1.5rem]"
-  >
-    <div class="h-[3.5rem] leading-[3.275rem] mx-10"><a href="">Home</a></div>
+    class="h-[3.5rem] bg-cc-100 flex justify-between items-center text-cc-400 text-[1.5rem]">
+    <a href="http://localhost:3000/" class="h-[3.5rem] leading-[3.275rem] mx-10">Home</a>
     <div class="flex gap-10 mx-10 items-center">
-      <a>Cheesefinder</a>
-      <a href="">About</a>
-      <a href="" class="bg-cc-400 text-cc-200 rounded-lg px-3 border-cc-200 border-solid border-2">Contact</a>
+      <a href="#cheesefinder">Cheesefinder</a>
+      <a href="http://localhost:3000/AboutUs">About</a>
+      <div class="bg-cc-400 text-cc-200 rounded-lg px-3 border-cc-200 border-solid border-2" onclick="location.href='mailto:mia.rascher@edu.tbz.ch';">Contact</div>
     </div>
   </nav>
   <div class="h-full w-full flex justify-center text-cc-400">
@@ -25,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
       </p>
     </div>
     <video autoplay muted>
-      <source src="videos/1.mp4" type="video/mp4" />
+      <source src={`videos/${random}.mp4`} type="video/mp4" />
     </video>
   </div>
   <div class="mt-5 w-full flex justify-center">
