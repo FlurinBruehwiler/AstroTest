@@ -37,7 +37,7 @@ export default () => {
   };
 
   return (
-    <div className="w-[700px] bg-cc-600">
+    <div className="w-[700px] bg-cc-600" id="cheesefinder">
       <div className="flex justify-center w-full self-center my-4">
         <input
           type="search"
